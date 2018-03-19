@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		920FEE05205D710800DD52E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920FEE04205D710800DD52E3 /* AppDelegate.swift */; };
-		920FEE07205D710800DD52E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920FEE06205D710800DD52E3 /* ViewController.swift */; };
 		920FEE0A205D710800DD52E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 920FEE08205D710800DD52E3 /* Main.storyboard */; };
 		920FEE0C205D710800DD52E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 920FEE0B205D710800DD52E3 /* Assets.xcassets */; };
 		920FEE0F205D710800DD52E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 920FEE0D205D710800DD52E3 /* LaunchScreen.storyboard */; };
 		920FEE1A205D710800DD52E3 /* Weather_Gift_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920FEE19205D710800DD52E3 /* Weather_Gift_AppTests.swift */; };
 		920FEE25205D710800DD52E3 /* Weather_Gift_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920FEE24205D710800DD52E3 /* Weather_Gift_AppUITests.swift */; };
+		920FEE35205D727E00DD52E3 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920FEE34205D727E00DD52E3 /* DetailVC.swift */; };
+		920FEE37205D772600DD52E3 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920FEE36205D772600DD52E3 /* ListVC.swift */; };
+		920FEE39205D799E00DD52E3 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920FEE38205D799E00DD52E3 /* PageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		920FEE01205D710800DD52E3 /* Weather Gift App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather Gift App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		920FEE04205D710800DD52E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		920FEE06205D710800DD52E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		920FEE09205D710800DD52E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		920FEE0B205D710800DD52E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		920FEE0E205D710800DD52E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		920FEE20205D710800DD52E3 /* Weather Gift AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weather Gift AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		920FEE24205D710800DD52E3 /* Weather_Gift_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_Gift_AppUITests.swift; sourceTree = "<group>"; };
 		920FEE26205D710800DD52E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		920FEE34205D727E00DD52E3 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		920FEE36205D772600DD52E3 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		920FEE38205D799E00DD52E3 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				920FEE04205D710800DD52E3 /* AppDelegate.swift */,
-				920FEE06205D710800DD52E3 /* ViewController.swift */,
+				920FEE38205D799E00DD52E3 /* PageVC.swift */,
+				920FEE34205D727E00DD52E3 /* DetailVC.swift */,
+				920FEE36205D772600DD52E3 /* ListVC.swift */,
 				920FEE08205D710800DD52E3 /* Main.storyboard */,
 				920FEE0B205D710800DD52E3 /* Assets.xcassets */,
 				920FEE0D205D710800DD52E3 /* LaunchScreen.storyboard */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				920FEE07205D710800DD52E3 /* ViewController.swift in Sources */,
+				920FEE37205D772600DD52E3 /* ListVC.swift in Sources */,
+				920FEE39205D799E00DD52E3 /* PageVC.swift in Sources */,
 				920FEE05205D710800DD52E3 /* AppDelegate.swift in Sources */,
+				920FEE35205D727E00DD52E3 /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6T2T22NGEV;
 				INFOPLIST_FILE = "Weather Gift App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lepore.Weather-Gift-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +453,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6T2T22NGEV;
 				INFOPLIST_FILE = "Weather Gift App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lepore.Weather-Gift-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
